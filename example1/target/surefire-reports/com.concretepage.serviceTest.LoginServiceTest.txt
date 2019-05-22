@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.concretepage.serviceTest.LoginServiceTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.887 s <<< FAILURE! - in com.concretepage.serviceTest.LoginServiceTest
+testForSuccessfulSignup(com.concretepage.serviceTest.LoginServiceTest)  Time elapsed: 1.871 s  <<< FAILURE!
+org.mockito.exceptions.verification.WantedButNotInvoked: 
+
+Wanted but not invoked:
+registerDao.save(
+    CustomerDetails [customerId=0, customerName=sree, mailId=sree@gmail.com, password=female]
+);
+-> at com.concretepage.dao.RegisterDao.save(RegisterDao.java:29)
+Actually, there were zero interactions with this mock.
+
+	at com.concretepage.serviceTest.LoginServiceTest.testForSuccessfulSignup(LoginServiceTest.java:44)
+
